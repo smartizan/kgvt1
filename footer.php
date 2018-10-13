@@ -1,34 +1,21 @@
 <?php
 /**
- * The template for displaying the footer
+ * The template for displaying the footer.
  *
- * Contains the closing of the #content div and all content after.
+ * @link https://livecomposerplugin.com/themes/
  *
- * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
- *
- * @package kgv
+ * @package LC Blank
  */
 
 ?>
 
-	</div><!-- #content -->
+<?php
 
-	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'kgv' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'kgv' ), 'WordPress' );
-				?>
-			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'kgv' ), 'kgv', '<a href="http://underscores.me/">Underscores.me</a>' );
-				?>
-		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
-</div><!-- #page -->
+if ( function_exists( 'dslc_hf_get_footer' ) ) {
+	echo dslc_hf_get_footer();
+}
+
+?>
 
 <?php wp_footer(); ?>
 
