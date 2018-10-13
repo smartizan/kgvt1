@@ -1,0 +1,13 @@
+.graycolored{
+    background-color: rgb(233, 233, 233);
+}
+
+.logo-img{
+    margin: 15px 15px 15px 15px;
+}
+
+.header-additional-1{
+    padding: 10px 0px 10px 10px;
+    font-size:1.3em;
+    font-weight:bold;
+}
